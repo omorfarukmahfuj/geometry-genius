@@ -21,23 +21,23 @@
   <header>
     <!-- Navbar Started -->
     <nav>
-      <div class="navbar bg-[#1090D8] bg-opacity-10 my-9 rounded-md px-9 py-4">
-        <div class="navbar-start">
+      <div class="navbar bg-[#1090D8] bg-opacity-10 my-9 rounded-md px-9 py-4 flex-col md:flex-row">
+        <div class="navbar-start justify-center md:justify-start">
           <a class="font-bold text-4xl text-[#111111cc]">Interactive
-            <p class="font-medium text-2xl text-[#11111199]">Geometry Genius</p>
+            <p class="font-medium text-xl md:text-2xl text-[#11111199]">Geometry Genius</p>
           </a>
         </div>
 
-        <div class="navbar-end">
+        <div class="navbar-end justify-center md:justify-end">
           <a class="btn font-bold text-base text-white bg-[#1090D8] hover:bg-[#1090D8] px-7 py-2 rounded-md">Blog</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <div class="grid grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
     <!-- Cards Container -->
-    <main class="grid grid-cols-3 gap-4 col-span-3">
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 col-span-1 lg:col-span-3 justify-items-center">
       <!-- Card 01 -->
       <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
         <figure><img class="h-40" src="images/triangle.png" alt="Triangle" /></figure>
@@ -128,7 +128,7 @@
         <figure><img class="h-40" src="images/ellipse.png" alt="Ellipse" /></figure>
         <div class="card-body mt-8 p-0">
           <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Ellipse</h2>
-          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = &#8508;ab</p>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = &#960;ab</p>
           <div class="flex justify-between items-center mb-7">
             <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
             <span class="mx-2 text-[#414141]">cm</span>
@@ -144,10 +144,11 @@
     </main>
 
     <!-- Area Calculation -->
-    <aside>
+    <aside class="mx-auto">
       <!-- Card 01 -->
       <div class="card w-80 h-96 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
         <h1 class="font-bold text-base text-[#111111cc] text-center underline">Area Calculation</h1>
+        <p class="font-bold text-2xl text-[#11111144] text-center my-auto">Result Here:</p>
       </div>
     </aside>
   </div>

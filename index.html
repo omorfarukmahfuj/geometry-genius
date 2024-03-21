@@ -17,23 +17,140 @@
 
 </head>
 
-<body class="font-['Inter']">
+<body class="font-['Inter'] w-11/12 mx-auto pb-36">
   <header>
     <!-- Navbar Started -->
     <nav>
-      <div class="navbar bg-[#1090D8] bg-opacity-10 w-11/12 mx-auto mt-9 rounded-md px-9 py-4">
+      <div class="navbar bg-[#1090D8] bg-opacity-10 my-9 rounded-md px-9 py-4">
         <div class="navbar-start">
-          <a class="font-bold text-4xl text-[#111] text-opacity-80">Interactive
-            <p class="font-medium text-2xl text-[#111] text-opacity-60">Geometry Genius</p>
+          <a class="font-bold text-4xl text-[#111111cc]">Interactive
+            <p class="font-medium text-2xl text-[#11111199]">Geometry Genius</p>
           </a>
         </div>
 
         <div class="navbar-end">
-          <a class="font-bold text-base text-white bg-[#1090D8] px-7 py-2 rounded-md">Blog</a>
+          <a class="btn font-bold text-base text-white bg-[#1090D8] hover:bg-[#1090D8] px-7 py-2 rounded-md">Blog</a>
         </div>
       </div>
     </nav>
   </header>
+
+  <div class="grid grid-cols-4 gap-4">
+    <!-- Cards Container -->
+    <main class="grid grid-cols-3 gap-4 col-span-3">
+      <!-- Card 01 -->
+      <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <figure><img class="h-40" src="images/triangle.png" alt="Triangle" /></figure>
+        <div class="card-body mt-8 p-0">
+          <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Triangle</h2>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = 0.5 × b × h</p>
+          <div class="flex justify-between items-center mb-7">
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
+            <span class="mx-2 text-[#414141]">cm</span>
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="h">
+            <span class="ml-2 text-[#414141]">cm</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn w-full bg-[#1090D8] hover:bg-[#1090D8] text-white font-bold text-base">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 02 -->
+      <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <figure><img class="h-40" src="images/rectangle.png" alt="Rectangle" /></figure>
+        <div class="card-body mt-8 p-0">
+          <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Rectangle</h2>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = w × I</p>
+          <div class="flex justify-between items-center mb-7">
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
+            <span class="mx-2 text-[#414141]">cm</span>
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="h">
+            <span class="ml-2 text-[#414141]">cm</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn w-full bg-[#1090D8] hover:bg-[#1090D8] text-white font-bold text-base">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 03 -->
+      <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <figure><img class="h-40" src="images/parallelogram.png" alt="Parallelogram" /></figure>
+        <div class="card-body mt-8 p-0">
+          <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Parallelogram</h2>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = b × h</p>
+          <div class="flex justify-between items-center mb-7">
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
+            <span class="mx-2 text-[#414141]">cm</span>
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="h">
+            <span class="ml-2 text-[#414141]">cm</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn w-full bg-[#1090D8] hover:bg-[#1090D8] text-white font-bold text-base">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 04 -->
+      <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <figure><img class="h-40" src="images/rhombus.png" alt="Rhombus" /></figure>
+        <div class="card-body mt-8 p-0">
+          <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Rhombus</h2>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = 0.5 × d<sub>1</sub> × d<sub>2</sub></p>
+          <div class="flex justify-between items-center mb-7">
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
+            <span class="mx-2 text-[#414141]">cm</span>
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="h">
+            <span class="ml-2 text-[#414141]">cm</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn w-full bg-[#1090D8] hover:bg-[#1090D8] text-white font-bold text-base">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 05 -->
+      <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <figure><img class="h-40" src="images/pentagon.png" alt="Pentagon" /></figure>
+        <div class="card-body mt-8 p-0">
+          <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Pentagon</h2>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = 0.5 × p × b</p>
+          <div class="flex justify-between items-center mb-7">
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
+            <span class="mx-2 text-[#414141]">cm</span>
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="h">
+            <span class="ml-2 text-[#414141]">cm</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn w-full bg-[#1090D8] hover:bg-[#1090D8] text-white font-bold text-base">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 06 -->
+      <div class="card w-80 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <figure><img class="h-40" src="images/ellipse.png" alt="Ellipse" /></figure>
+        <div class="card-body mt-8 p-0">
+          <h2 class="card-title justify-center font-bold text-xl text-[#414141] mb-1">Ellipse</h2>
+          <p class="text-center text-sm text-[#414141] mb-4">Area (A) = &#8508;ab</p>
+          <div class="flex justify-between items-center mb-7">
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="b">
+            <span class="mx-2 text-[#414141]">cm</span>
+            <input class="w-20 bg-[#F1F1F1] py-1 pl-2 rounded" type="number" placeholder="h">
+            <span class="ml-2 text-[#414141]">cm</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn w-full bg-[#1090D8] hover:bg-[#1090D8] text-white font-bold text-base">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Area Calculation -->
+    <aside>
+      <!-- Card 01 -->
+      <div class="card w-80 h-96 bg-base-100 border-2 border-[#1111111A] p-8 rounded-md">
+        <h1 class="font-bold text-base text-[#111111cc] text-center underline">Area Calculation</h1>
+      </div>
+    </aside>
+  </div>
 </body>
 
 </html>
